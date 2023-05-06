@@ -58,8 +58,8 @@ a, a:hover, a:visited, a:active {
 
 .intro {
     border-top: 2px solid var(--white);
-    border-bottom: 2px solid var(--white);
-    padding: var(--spacing-s);
+    /* border-bottom: 2px solid var(--white); */
+    padding: var(--spacing-s) 0 0 0;
     margin: var(--spacing-m) 0 0 0;
     line-height: 1.3;
 }
@@ -67,9 +67,15 @@ a, a:hover, a:visited, a:active {
 #contact{
     background-color: var(--white);
     border-radius: var(--radius-s);
-    color: black;
+    color: #000000bd;
     padding: 0 var(--spacing-xs);
     margin: 0;
+}
+
+#updated{
+    font-size: 90%;
+    opacity: .6;
+    text-align: center;
 }
 
 /************** INDEX ***************/
@@ -89,7 +95,7 @@ a, a:hover, a:visited, a:active {
     background-color: var(--dim);
     display: grid;
     align-content: start;
-    height: 200px;
+    height: fit-content;
     overflow-y: scroll;
     border-radius: var(--radius-m);
     font-size: 200%;
@@ -119,7 +125,7 @@ a, a:hover, a:visited, a:active {
 
 
 .hideName {
-    display: none;
+    /* display: none; */
 }
 
 .indexBlock {
@@ -127,6 +133,8 @@ a, a:hover, a:visited, a:active {
     height: fit-content;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid var(--dim);
+    display: block;
 }
 
 .addLine {
