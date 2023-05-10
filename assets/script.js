@@ -1,9 +1,9 @@
 /////////// IPHONE HEIGHT ///////////
 
 function mobileWindow() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-  console.log("VH on mobiles", vh);
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    console.log("VH on mobiles", vh);
 }
 
 window.addEventListener("resize", mobileWindow, false);
@@ -22,11 +22,11 @@ var $index = document.querySelector('.index');
 var $box = document.querySelector('.box');
 
 function onStart() {
-        $texto.classList.add("remove");
-        $intro.classList.add("fit");
-        $index.classList.add("opa");
-        $content.classList.add("opa");
-        $start.classList.add("hidden");
+    $texto.classList.add("remove");
+    $intro.classList.add("fit");
+    $index.classList.add("opa");
+    $content.classList.add("opa");
+    $start.classList.add("hidden");
 }
 $start.addEventListener("click", onStart, false);
 
@@ -55,50 +55,50 @@ fetch('data.json')
 function appendData(data) {
     var $content = document.querySelector(".content");
     var $indexContent = document.querySelector(".indexContent");
-var $updated = document.querySelector('.updated');
+    var $updated = document.querySelector('.updated');
 
 
-    
+
     for (var i = 0; i < data.translations.length; i++) {
         var translations = data.translations[i];
         console.log(translations.flag);
 
-/////// INDEX LIST
+        /////// INDEX LIST
 
-    var indexBlock = document.createElement("a");
-    indexBlock.className = 'indexBlock';
-    indexBlock.href = '#' + translations.code;
+        var indexBlock = document.createElement("a");
+        indexBlock.className = 'indexBlock';
+        indexBlock.href = '#' + translations.code;
 
-    var indexFlag = document.createElement("span");
-    indexFlag.id = 'indexFlag';
-    indexFlag.innerHTML = translations.flag;
-    indexBlock.appendChild(indexFlag);
+        var indexFlag = document.createElement("span");
+        indexFlag.id = 'indexFlag';
+        indexFlag.innerHTML = translations.flag;
+        indexBlock.appendChild(indexFlag);
 
-    var indexFlag = document.createElement("span");
-    indexFlag.className = 'indexName';
-    indexFlag.innerHTML = translations.country;
-    indexBlock.appendChild(indexFlag);
+        var indexFlag = document.createElement("span");
+        indexFlag.className = 'indexName';
+        indexFlag.innerHTML = translations.country;
+        indexBlock.appendChild(indexFlag);
 
-    $indexContent.appendChild(indexBlock);
+        $indexContent.appendChild(indexBlock);
 
-    if (translations.contributor == 'xxx') {
+        if (translations.contributor == 'xxx') {
             indexBlock.className = 'indexBlock disable';
         };
 
 
-/////// BIG BLOCK
+        /////// BIG BLOCK
 
         var block = document.createElement("div");
         block.className = 'block';
         block.id = translations.code;
 
         if (translations.contributor == 'xxx') {
-            block.className = 'block hideName';        
+            block.className = 'block hideName';
         };
-    
 
 
-/////// HEADER
+
+        /////// HEADER
 
         var blockName = document.createElement("div");
         blockName.className = 'block-name';
@@ -122,7 +122,7 @@ var $updated = document.querySelector('.updated');
 
 
 
-/////// HELLO TRANSLATION
+        /////// HELLO TRANSLATION
 
         var helloBlokEntry = document.createElement("div");
         helloBlokEntry.className = 'block-entry';
@@ -149,7 +149,7 @@ var $updated = document.querySelector('.updated');
 
 
 
-/////// THANKS TRANSLATION
+        /////// THANKS TRANSLATION
 
         var thanksBlokEntry = document.createElement("div");
         thanksBlokEntry.className = 'block-entry';
@@ -175,7 +175,7 @@ var $updated = document.querySelector('.updated');
         block.appendChild(thanksBlokEntry);
 
 
-/////// CHEERS TRANSLATION
+        /////// CHEERS TRANSLATION
 
         var cheersBlokEntry = document.createElement("div");
         cheersBlokEntry.className = 'block-entry';
@@ -201,10 +201,9 @@ var $updated = document.querySelector('.updated');
         block.appendChild(cheersBlokEntry);
 
 
-/////// APPEND ALL
+        /////// APPEND ALL
 
-$updated.before(block)
-        // $content.appendChild(block);
+        $updated.before(block)
     }
 
     var audioButton = document.querySelectorAll('.audio');
@@ -225,37 +224,37 @@ $updated.before(block)
 
     /////////// INDEX ///////////
 
-var $list = document.querySelector('#list');
-var $flags = document.querySelector('#flags');
-var $indexName = document.querySelectorAll('.indexName');
-var $indexContent = document.querySelector('.indexContent');
-var $indexBlock = document.querySelectorAll('.indexBlock');
+    var $list = document.querySelector('#list');
+    var $flags = document.querySelector('#flags');
+    var $indexName = document.querySelectorAll('.indexName');
+    var $indexContent = document.querySelector('.indexContent');
+    var $indexBlock = document.querySelectorAll('.indexBlock');
 
-function showList() {
-    for (let i = 0, max = $indexName.length; i < max; i++) {
-        $indexName[i].classList.remove("hideName");
-        $indexContent.classList.add("indexList");
-        $list.classList.add("selected");
-        $flags.classList.remove("selected");
+    function showList() {
+        for (let i = 0, max = $indexName.length; i < max; i++) {
+            $indexName[i].classList.remove("hideName");
+            $indexContent.classList.add("indexList");
+            $list.classList.add("selected");
+            $flags.classList.remove("selected");
+        }
+        for (let i = 0, max = $indexBlock.length; i < max; i++) {
+            $indexBlock[i].classList.remove("addLine");
+        }
     }
-    for (let i = 0, max = $indexBlock.length; i < max; i++) {
-        $indexBlock[i].classList.remove("addLine");
-    }
-}
-$list.addEventListener("click", showList, false);
+    $list.addEventListener("click", showList, false);
 
-function showFlags() {
-    for (let i = 0, max = $indexName.length; i < max; i++) {
-        $indexName[i].classList.add("hideName");
-        $indexContent.classList.remove("indexList");
-        $list.classList.remove("selected");
-        $flags.classList.add("selected");
+    function showFlags() {
+        for (let i = 0, max = $indexName.length; i < max; i++) {
+            $indexName[i].classList.add("hideName");
+            $indexContent.classList.remove("indexList");
+            $list.classList.remove("selected");
+            $flags.classList.add("selected");
+        }
+        for (let i = 0, max = $indexBlock.length; i < max; i++) {
+            $indexBlock[i].classList.add("addLine");
+        }
     }
-    for (let i = 0, max = $indexBlock.length; i < max; i++) {
-        $indexBlock[i].classList.add("addLine");
-    }
-}
-$flags.addEventListener("click", showFlags, false);
+    $flags.addEventListener("click", showFlags, false);
 
 
 
