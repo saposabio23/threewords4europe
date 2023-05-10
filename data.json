@@ -1,22 +1,103 @@
 {
   "translations": [
     {
-      "code": "deu",
-      "country": "Germany",
-      "flag": "🇩🇪",
-      "contributor": "Merle S.",
-      "hello": "Hallo",
-      "thanks": "Danke",
-      "cheers": "Prost"
+      "code": "alb",
+      "country": "Albania",
+      "flag": "🇦🇱",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
     },
     {
-      "code": "fra",
-      "country": "France",
-      "flag": "🇫🇷",
-      "contributor": "Auguste M. + Pablo M.",
-      "hello": "Salut",
-      "thanks": "Merci",
-      "cheers": "Santé"
+      "code": "and",
+      "country": "Andorra",
+      "flag": "🇦🇩",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "aut",
+      "country": "Austria",
+      "flag": "🇦🇹",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "aze",
+      "country": "Azerbaijan",
+      "flag": "🇦🇿",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "blr",
+      "country": "Belarus",
+      "flag": "🇧🇾",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "bel",
+      "country": "Belgium",
+      "flag": "🇧🇪",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "bih",
+      "country": "Bosnia",
+      "flag": "🇧🇦",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "bgr",
+      "country": "Bulgaria",
+      "flag": "🇧🇬",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "hrv",
+      "country": "Croatia",
+      "flag": "🇭🇷",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "cyp",
+      "country": "Cyprus",
+      "flag": "🇨🇾",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "cze",
+      "country": "Czechia",
+      "flag": "🇨🇿",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
     },
     {
       "code": "dnk",
@@ -28,13 +109,31 @@
       "cheers": "Skål"
     },
     {
-      "code": "ita",
-      "country": "Italy",
-      "flag": "🇮🇹",
-      "contributor": "Irene B. +  Maddalena L.",
-      "hello": "Ciao",
-      "thanks": "Grazie",
-      "cheers": "Cin Cin"
+      "code": "est",
+      "country": "Estonia",
+      "flag": "🇪🇪",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "fin",
+      "country": "Finland",
+      "flag": "🇫🇮",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
+    },
+    {
+      "code": "fra",
+      "country": "France",
+      "flag": "🇫🇷",
+      "contributor": "Auguste M. + Pablo M.",
+      "hello": "Salut",
+      "thanks": "Merci",
+      "cheers": "Santé"
     },
     {
       "code": "geo",
@@ -46,22 +145,22 @@
       "cheers": "Gagimarjos"
     },
     {
-      "code": "isl",
-      "country": "Iceland",
-      "flag": "🇮🇸",
-      "contributor": "Stefan I.",
-      "hello": "Halló",
-      "thanks": "Takk fyrir",
-      "cheers": "Skál"
+      "code": "deu",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "contributor": "Merle S.",
+      "hello": "Hallo",
+      "thanks": "Danke",
+      "cheers": "Prost"
     },
     {
-      "code": "svk",
-      "country": "Slovakia",
-      "flag": "🇸🇰",
-      "contributor": "Svetlana O.",
-      "hello": "Ahoj",
-      "thanks": "Ďakujem",
-      "cheers": "Nazdravie"
+      "code": "grc",
+      "country": "Greece",
+      "flag": "🇬🇷",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
     },
     {
       "code": "hun",
@@ -73,59 +172,274 @@
       "cheers": "Egészségedre"
     },
     {
-      "code": "ltu",
-      "country": "Lithuania",
-      "flag": "🇱🇹",
-      "contributor": "Goda",
-      "hello": "Labas",
-      "thanks": "Ačiū tau",
-      "cheers": "į Sveikatą"
+      "code": "isl",
+      "country": "Iceland",
+      "flag": "🇮🇸",
+      "contributor": "Stefan I.",
+      "hello": "Halló",
+      "thanks": "Takk fyrir",
+      "cheers": "Skál"
     },
     {
-      "code": "prt",
-      "country": "Portugal",
-      "flag": "🇵🇹",
-      "contributor": "Ni",
-      "hello": "Olá",
-      "thanks": "Obrigado",
-      "cheers": "Saúde"
+      "code": "irl",
+      "country": "Ireland",
+      "flag": "🇮🇪",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
     },
     {
-      "code": "esp",
-      "country": "Spain",
-      "flag": "🇪🇸",
-      "contributor": "Carla R.",
-      "hello": "Hola",
-      "thanks": "Gracias",
-      "cheers": "Salud"
+      "code": "ita",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "contributor": "Irene B. +  Maddalena L.",
+      "hello": "Ciao",
+      "thanks": "Grazie",
+      "cheers": "Cin Cin"
     },
     {
-      "code": "srb",
-      "country": "Serbia",
-      "flag": "🇷🇸",
-      "contributor": "Nina",
-      "hello": "Ćao",
-      "thanks": "Hvala",
-      "cheers": "Živeli"
+      "code": "kaz",
+      "country": "Kazakhstan",
+      "flag": "🇰🇿",
+      "contributor": "xxx",
+      "hello": "xxx",
+      "thanks": "xxx",
+      "cheers": "xxx"
     },
-    {
-      "code": "tur",
-      "country": "Turkey",
-      "flag": "🇹🇷",
-      "contributor": "Kerem",
-      "hello": "Merhaba",
-      "thanks": "Teşekkür ederim",
-      "cheers": "Şerefe"
-    },
-    {
-      "code": "mkd",
-      "country": "Macedonia",
-      "flag": "🇲🇰",
-      "contributor": "Marija",
-      "hello": "Zdravo",
-      "thanks": "Blagodaram",
-      "cheers": "Živeli"
-    }
-    
+   { 
+    "code": "kos",
+    "country": "Kosovo",
+    "flag": "🇽🇰",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "lva",
+    "country": "Latvia",
+    "flag": "🇱🇻",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "lie",
+    "country": "Liechtenstein",
+    "flag": "🇱🇮",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "ltu",
+    "country": "Lithuania",
+    "flag": "🇱🇹",
+    "contributor": "Goda",
+    "hello": "Labas",
+    "thanks": "Ačiū tau",
+    "cheers": "į Sveikatą"
+  },
+  { 
+    "code": "lux",
+    "country": "Luxembourg",
+    "flag": "🇱🇺",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "mlt",
+    "country": "Malta",
+    "flag": "🇲🇹",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "mda",
+    "country": "Moldova",
+    "flag": "🇲🇩",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "mco",
+    "country": "Monaco",
+    "flag": "🇲🇨",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "mne",
+    "country": "Montenegro",
+    "flag": "🇲🇪",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "nld",
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "mkd",
+    "country": "Macedonia",
+    "flag": "🇲🇰",
+    "contributor": "Marija",
+    "hello": "Zdravo",
+    "thanks": "Blagodaram",
+    "cheers": "Živeli"
+  },
+  { 
+    "code": "nor",
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "pol",
+    "country": "Poland",
+    "flag": "🇵🇱",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "prt",
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "contributor": "Ni",
+    "hello": "Olá",
+    "thanks": "Obrigado",
+    "cheers": "Saúde"
+  },
+  { 
+    "code": "rou",
+    "country": "Romania",
+    "flag": "🇷🇴",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "rus",
+    "country": "Russia",
+    "flag": "🇷🇺",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "smr",
+    "country": "San Marino",
+    "flag": "🇸🇲",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "srb",
+    "country": "Serbia",
+    "flag": "🇷🇸",
+    "contributor": "Nina",
+    "hello": "Ćao",
+    "thanks": "Hvala",
+    "cheers": "Živeli"
+  },
+  {
+    "code": "svk",
+    "country": "Slovakia",
+    "flag": "🇸🇰",
+    "contributor": "Svetlana O.",
+    "hello": "Ahoj",
+    "thanks": "Ďakujem",
+    "cheers": "Nazdravie"
+  },
+  { 
+    "code": "svn",
+    "country": "Slovenia",
+    "flag": "🇸🇮",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "esp",
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "contributor": "Carla R.",
+    "hello": "Hola",
+    "thanks": "Gracias",
+    "cheers": "Salud"
+  },
+  { 
+    "code": "swe",
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "che",
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  {
+    "code": "tur",
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "contributor": "Kerem",
+    "hello": "Merhaba",
+    "thanks": "Teşekkür ederim",
+    "cheers": "Şerefe"
+  },
+  { 
+    "code": "ukr",
+    "country": "Ukraine",
+    "flag": "🇺🇦",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  },
+  { 
+    "code": "gbr",
+    "country": "United Kingdom",
+    "flag": "🇬🇧",
+    "contributor": "xxx",
+    "hello": "xxx",
+    "thanks": "xxx",
+    "cheers": "xxx"
+  }
   ]
 }

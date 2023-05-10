@@ -1,37 +1,41 @@
-/////////// INDEX ///////////
+/////////// IPHONE HEIGHT ///////////
 
-var $list = document.querySelector('#list');
-var $flags = document.querySelector('#flags');
-var $indexName = document.querySelectorAll('.indexName');
-var $indexContent = document.querySelector('.indexContent');
-var $indexBlock = document.querySelectorAll('.indexBlock');
-
-function showList() {
-    for (let i = 0, max = $indexName.length; i < max; i++) {
-        $indexName[i].classList.remove("hideName");
-        $indexContent.classList.add("indexList");
-        $list.classList.add("selected");
-        $flags.classList.remove("selected");
-    }
-    for (let i = 0, max = $indexBlock.length; i < max; i++) {
-        $indexBlock[i].classList.remove("addLine");
-    }
+function mobileWindow() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  console.log("VH on mobiles", vh);
 }
-$list.addEventListener("click", showList, false);
 
-function showFlags() {
-    for (let i = 0, max = $indexName.length; i < max; i++) {
-        $indexName[i].classList.add("hideName");
-        $indexContent.classList.remove("indexList");
-        $list.classList.remove("selected");
-        $flags.classList.add("selected");
-    }
-    for (let i = 0, max = $indexBlock.length; i < max; i++) {
-        $indexBlock[i].classList.add("addLine");
-    }
+window.addEventListener("resize", mobileWindow, false);
+window.addEventListener("orientationchange", mobileWindow, false);
+
+
+/////////// INTRO ///////////
+
+var $logo = document.querySelector('#logo-top');
+
+var $start = document.querySelector('#start');
+var $texto = document.querySelector('#texto');
+var $intro = document.querySelector('.intro');
+var $content = document.querySelector('.content');
+var $index = document.querySelector('.index');
+var $box = document.querySelector('.box');
+
+function onStart() {
+        $texto.classList.add("remove");
+        $intro.classList.add("fit");
+        $index.classList.add("opa");
+        $content.classList.add("opa");
+        $start.classList.add("hidden");
 }
-$flags.addEventListener("click", showFlags, false);
+$start.addEventListener("click", onStart, false);
 
+function onOpen() {
+    $texto.classList.remove("remove");
+    $intro.classList.remove("fit");
+    $start.classList.remove("hidden");
+}
+$texto.addEventListener("click", onOpen, false);
 
 
 /*//////////////// DATA FETCH /////////////*/
@@ -50,16 +54,48 @@ fetch('data.json')
 /*//////////////// DATA APPEND /////////////*/
 function appendData(data) {
     var $content = document.querySelector(".content");
+    var $indexContent = document.querySelector(".indexContent");
+var $updated = document.querySelector('.updated');
 
+
+    
     for (var i = 0; i < data.translations.length; i++) {
         var translations = data.translations[i];
         console.log(translations.flag);
+
+/////// INDEX LIST
+
+    var indexBlock = document.createElement("a");
+    indexBlock.className = 'indexBlock';
+    indexBlock.href = '#' + translations.code;
+
+    var indexFlag = document.createElement("span");
+    indexFlag.id = 'indexFlag';
+    indexFlag.innerHTML = translations.flag;
+    indexBlock.appendChild(indexFlag);
+
+    var indexFlag = document.createElement("span");
+    indexFlag.className = 'indexName';
+    indexFlag.innerHTML = translations.country;
+    indexBlock.appendChild(indexFlag);
+
+    $indexContent.appendChild(indexBlock);
+
+    if (translations.contributor == 'xxx') {
+            indexBlock.className = 'indexBlock disable';
+        };
+
 
 /////// BIG BLOCK
 
         var block = document.createElement("div");
         block.className = 'block';
         block.id = translations.code;
+
+        if (translations.contributor == 'xxx') {
+            block.className = 'block hideName';        
+        };
+    
 
 
 /////// HEADER
@@ -167,7 +203,8 @@ function appendData(data) {
 
 /////// APPEND ALL
 
-        $content.appendChild(block);
+$updated.before(block)
+        // $content.appendChild(block);
     }
 
     var audioButton = document.querySelectorAll('.audio');
@@ -186,4 +223,42 @@ function appendData(data) {
         });
     }
 
+    /////////// INDEX ///////////
+
+var $list = document.querySelector('#list');
+var $flags = document.querySelector('#flags');
+var $indexName = document.querySelectorAll('.indexName');
+var $indexContent = document.querySelector('.indexContent');
+var $indexBlock = document.querySelectorAll('.indexBlock');
+
+function showList() {
+    for (let i = 0, max = $indexName.length; i < max; i++) {
+        $indexName[i].classList.remove("hideName");
+        $indexContent.classList.add("indexList");
+        $list.classList.add("selected");
+        $flags.classList.remove("selected");
+    }
+    for (let i = 0, max = $indexBlock.length; i < max; i++) {
+        $indexBlock[i].classList.remove("addLine");
+    }
 }
+$list.addEventListener("click", showList, false);
+
+function showFlags() {
+    for (let i = 0, max = $indexName.length; i < max; i++) {
+        $indexName[i].classList.add("hideName");
+        $indexContent.classList.remove("indexList");
+        $list.classList.remove("selected");
+        $flags.classList.add("selected");
+    }
+    for (let i = 0, max = $indexBlock.length; i < max; i++) {
+        $indexBlock[i].classList.add("addLine");
+    }
+}
+$flags.addEventListener("click", showFlags, false);
+
+
+
+
+}
+
