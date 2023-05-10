@@ -106,7 +106,7 @@ padding: var(--spacing-s);
     align-content: start;
     border-radius: var(--radius-m);
     font-size: 200%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5,auto);
     padding: var(--spacing-xs);
     overflow-y: scroll;
     overflow-x: hidden;
@@ -182,6 +182,8 @@ padding: var(--spacing-s);
 }
 
 .block-name {
+    font-family: var(--bold);
+    font-size: 130%;
 
     margin: 0 0 var(--spacing-s) 0;
     background-color: var(--dim);
@@ -199,6 +201,10 @@ padding: var(--spacing-s);
 
     font-family: var(--bold)
         /* row-gap: var(--spacing-xs); */
+}
+
+.content span {
+    margin-right: var(--spacing-xs);
 }
 
 #flag {}

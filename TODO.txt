@@ -1,1 +1,2 @@
-- when anchor lonk, open details
+- index list by JSON
+- start button
