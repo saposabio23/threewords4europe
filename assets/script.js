@@ -25,8 +25,10 @@ function onStart() {
     $texto.classList.add("remove");
     $intro.classList.add("fit");
     $index.classList.add("opa");
+    $index.classList.add("borUp");
     $content.classList.add("opa");
     $start.classList.add("hidden");
+    // $box.classList.add("bor");
 }
 $start.addEventListener("click", onStart, false);
 
@@ -34,6 +36,8 @@ function onOpen() {
     $texto.classList.remove("remove");
     $intro.classList.remove("fit");
     $start.classList.remove("hidden");
+    $index.classList.remove("borUp");
+
 }
 $texto.addEventListener("click", onOpen, false);
 
@@ -239,6 +243,7 @@ function appendData(data) {
         }
         for (let i = 0, max = $indexBlock.length; i < max; i++) {
             $indexBlock[i].classList.remove("addLine");
+            $indexBlock[i].classList.remove("indexBlockFlag");
         }
     }
     $list.addEventListener("click", showList, false);
@@ -252,6 +257,7 @@ function appendData(data) {
         }
         for (let i = 0, max = $indexBlock.length; i < max; i++) {
             $indexBlock[i].classList.add("addLine");
+            $indexBlock[i].classList.add("indexBlockFlag");
         }
     }
     $flags.addEventListener("click", showFlags, false);

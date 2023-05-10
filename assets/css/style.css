@@ -70,18 +70,18 @@ p {
 .intro {
     line-height: 1.3;
     font-size: 110%;
+    
 
     display: flex;
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 100 - 30px);
     transition: all ease-in-out .8s;
-
+    
 }
+
 
 .box {
     padding: var(--spacing-m) 0 var(--spacing-m) 0;
-
-    border-top: 2px solid var(--white);
 
     display: flex;
     flex-direction: column;
@@ -89,12 +89,24 @@ p {
     height: calc(100% - var(--spacing-m));
     transition: all ease-in-out .8s;
 
+    border-top: 2px solid var(--white);
 
 }
 
 
-#texto {
+#texto, .bor {
     transition: all ease-in-out .8s;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: var(--spacing-m);
+}
+
+.texto80{
+    opacity: .6;
+}
+
+ .borUp {
+    transition: all ease-in-out .8s;
+    border-top: 2px solid var(--white);
 }
 
 .remove {
@@ -110,9 +122,9 @@ p {
     }
 
     100% {
-        height: 40px;
+        height: 60px;
         overflow-x: scroll;
-
+        -webkit-mask-image: linear-gradient(180deg, #000 20%, transparent);
     }
 }
 
@@ -196,8 +208,8 @@ p {
     width: 100%;
     box-sizing: border-box;
     padding: var(--spacing-m) 0 var(--spacing-m) 0;
-    border-top: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
+    transition: all ease-in-out .8s;
 
 }
 
@@ -246,15 +258,19 @@ p {
 .indexBlock {
     padding: var(--spacing-s);
     height: fit-content;
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid var(--dim);
     display: block;
 }
 
+.indexBlockFlag {
+    display: flex;
+    justify-content: center;
+    
+}
+
 .addLine {
     border-bottom: 0px solid var(--dim);
-    display: block;
+    display: flex;
 }
 
 

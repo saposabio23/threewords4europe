@@ -60,6 +60,23 @@
     }
 
 
+.remove {
+    animation: .8s ease-in-out;
+    animation-name: remove1;
+    animation-fill-mode: forwards;
+    transition: all ease-in-out .8s;
+}
+
+@keyframes remove1 {
+    0% {
+opacity: 1;    }
+
+    100% {
+opacity: .6;
+    }
+}
+
+
 }
 
 @media screen and (min-width: 1100px) {
