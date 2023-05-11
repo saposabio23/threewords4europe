@@ -7,8 +7,7 @@
     }
 
     .intro {
-        width: calc(100vw - 65vw - 30px);
-        position: fixed;
+        width: 100%;
         height: fit-content;
         
         left: var(--spacing-m);
@@ -16,14 +15,22 @@
         font-size: 110%;
     }
 
+    .leftMobile {
+        width: calc(100vw - 70vw - 30px);
+        position: fixed;
+        height: calc(100vh - 30px);
+        left: var(--spacing-m);
+        top: var(--spacing-m);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
     .box {
         padding: var(--spacing-s) 0 var(--spacing-s) 0;
     }
 
     .index {
-        width: calc(100vw - 65vw - 30px);
-        position: fixed;
-
         bottom: var(--spacing-m);
         left: var(--spacing-m);
         height: fit-content;
@@ -37,13 +44,13 @@
     }
 
     .content {
-        width: calc(100vw - 35vw - 30px);
+        width: calc(100vw - 30vw - 30px);
         grid-template-columns: auto;
         position: absolute;
         overflow-x: scroll;
         right: var(--spacing-m);
         padding: 0 0 var(--spacing-m) 0;
-        grid-gap: var(--spacing-s);
+        grid-gap: var(--spacing-m);
 
         opacity: 0;
         pointer-events: none;
@@ -69,10 +76,9 @@
 
 @keyframes remove1 {
     0% {
-opacity: 1;    }
+}
 
     100% {
-opacity: .6;
     }
 }
 

@@ -37,6 +37,9 @@ function onOpen() {
     $intro.classList.remove("fit");
     $start.classList.remove("hidden");
     $index.classList.remove("borUp");
+    $content.classList.remove("opa");
+    $index.classList.remove("opa");
+
 
 }
 $texto.addEventListener("click", onOpen, false);

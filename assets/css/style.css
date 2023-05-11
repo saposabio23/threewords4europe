@@ -75,13 +75,13 @@ p {
     display: flex;
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 100 - 30px);
-    transition: all ease-in-out .8s;
+    transition: all ease-in-out .5s;
     
 }
 
 
 .box {
-    padding: var(--spacing-m) 0 var(--spacing-m) 0;
+    padding: var(--spacing-m) 0 0 0;
 
     display: flex;
     flex-direction: column;
@@ -155,13 +155,19 @@ p {
 
 .fit {
     height: fit-content;
-    transition: all ease-in-out .8s;
+    transition: all ease-in-out .5s;
+    opacity: .6;
 }
 
 
 #contact {
     margin: 0;
     text-decoration: underline;
+}
+
+
+#contact:hover {
+    text-decoration: none;
 
 }
 
@@ -175,11 +181,19 @@ p {
 
 #updated {
     font-size: 90%;
-    opacity: .8;
     text-align: center;
     border: 1px dotted white;
     border-radius: 10px;
     padding: var(--spacing-s);
+    text-decoration: none;
+}
+
+#updated > a{
+    text-decoration: underline;
+}
+#updated > a:hover {
+    text-decoration: none;
+
 }
 
 
@@ -187,20 +201,20 @@ p {
 .buttons{
     font-size: 110%;
     text-align: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: var(--spacing-s);
+    padding: var(--spacing-l);
     width: 100%;
-    background-color: var(--smoke);
+    background-color: transparent;
+    border: none;
     color: white;
-    margin-top: var(--spacing-m);
     transition: all ease-in-out .8s;
-    box-shadow: 0px 0px 10px #00000030;
+    text-decoration: underline;
 }
 
 .buttons:hover {
     box-shadow: 0px 0px 0 transparent;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 /************** INDEX ***************/
@@ -228,7 +242,7 @@ p {
     padding: var(--spacing-xs);
     overflow-y: scroll;
     overflow-x: hidden;
-
+    margin-bottom: var(--spacing-s);
     height: 30vh;
 }
 

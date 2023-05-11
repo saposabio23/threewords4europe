@@ -1,4 +1,6 @@
 
 
 - anchor lINK margin
+- last child content width all grids
 
+-when selected in list box-shadow al anchor div
