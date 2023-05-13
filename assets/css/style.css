@@ -74,6 +74,7 @@ p {
     display: flex;
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 100 - 30px);
+    min-height: calc(var(--vh, 1vh) * 100 - 30px);
     transition: all ease-in-out .5s;
     
 }

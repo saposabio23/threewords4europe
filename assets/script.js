@@ -7,6 +7,7 @@ function mobileWindow() {
     console.log("VH on mobiles", vh);
 }
 
+window.addEventListener("resize", mobileWindow, false);
 window.addEventListener("orientationchange", mobileWindow, false);
 
 
