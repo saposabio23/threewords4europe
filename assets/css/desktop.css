@@ -66,6 +66,10 @@
 
     }
 
+    .buttons {
+        padding: var(--spacing-m);
+    }
+
 
 .remove {
     animation: .8s ease-in-out;
@@ -88,14 +92,6 @@
 @media screen and (min-width: 1100px) {
     .content {
         grid-template-columns: auto auto;
-    }
-
-}
-
-
-@media screen and (min-width: 1500px) {
-    .content {
-        grid-template-columns: auto auto auto;
     }
 
 }

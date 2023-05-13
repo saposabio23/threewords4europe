@@ -17,7 +17,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -93,7 +92,6 @@ p {
 
 }
 
-
 #texto, .bor {
     transition: all ease-in-out .8s;
     border-bottom: 2px solid var(--white);
@@ -104,10 +102,6 @@ p {
     opacity: .6;
 }
 
- .borUp {
-    transition: all ease-in-out .8s;
-    border-top: 2px solid var(--white);
-}
 
 .remove {
     animation: .8s ease-in-out;
@@ -208,6 +202,7 @@ p {
     color: white;
     transition: all ease-in-out .8s;
     text-decoration: underline;
+    box-sizing: border-box;
 }
 
 .buttons:hover {

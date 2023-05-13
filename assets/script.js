@@ -15,6 +15,7 @@ window.addEventListener("orientationchange", mobileWindow, false);
 var $logo = document.querySelector('#logo-top');
 
 var $start = document.querySelector('#start');
+var $go = document.querySelector('#go');
 var $texto = document.querySelector('#texto');
 var $intro = document.querySelector('.intro');
 var $content = document.querySelector('.content');
@@ -22,27 +23,20 @@ var $index = document.querySelector('.index');
 var $box = document.querySelector('.box');
 
 function onStart() {
-    $texto.classList.add("remove");
-    $intro.classList.add("fit");
-    $index.classList.add("opa");
-    $index.classList.add("borUp");
-    $content.classList.add("opa");
-    $start.classList.add("hidden");
-    // $box.classList.add("bor");
+    $index.classList.toggle("opa");
+    $content.classList.toggle("opa");
+    $texto.classList.toggle("disable");
+    $start.classList.toggle("disable");
 }
 $start.addEventListener("click", onStart, false);
 
-function onOpen() {
-    $texto.classList.remove("remove");
-    $intro.classList.remove("fit");
-    $start.classList.remove("hidden");
-    $index.classList.remove("borUp");
-    $content.classList.remove("opa");
+function onGo() {
     $index.classList.remove("opa");
-
-
+    $content.classList.remove("opa");
+    $texto.classList.remove("disable");
+    $start.classList.remove("disable");
 }
-$texto.addEventListener("click", onOpen, false);
+$go.addEventListener("click", onGo, false);
 
 
 /*//////////////// DATA FETCH /////////////*/
@@ -265,8 +259,26 @@ function appendData(data) {
     }
     $flags.addEventListener("click", showFlags, false);
 
-
-
-
 }
+
+
+// document.querySelectorAll("a[href*='#']").forEach(function(current) {
+
+//     // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+//     // Please acknowledge use of this code by including this header.
+
+//     if(current.origin + current.pathname != self.location.href) {
+//       return;
+//     }
+
+//     (function(anchorPoint) {
+//       if(anchorPoint) {
+//         current.addEventListener("click", function(e) {
+//           anchorPoint.scrollIntoView({behavior: "smooth"});
+//           e.preventDefault();
+//         }, false);
+//       }
+//     })(document.querySelector(current.hash));
+
+//   });
 
