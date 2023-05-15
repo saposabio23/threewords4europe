@@ -9,6 +9,7 @@
     .intro {
         width: 100%;
         height: fit-content;
+        min-height: fit-content;
         
         left: var(--spacing-m);
         top: var(--spacing-m);
@@ -67,7 +68,7 @@
     }
 
     .buttons {
-        padding: var(--spacing-m);
+        padding: var(--spacing-l);
     }
 
 
