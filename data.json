@@ -4,10 +4,10 @@
       "code": "alb",
       "country": "Albania",
       "flag": "🇦🇱",
-      "contributor": "xxx",
-      "hello": "xxx",
-      "thanks": "xxx",
-      "cheers": "xxx"
+      "contributor": "Megi + Uendi + Enia",
+      "hello": "Pershendetje",
+      "thanks": "Faleminderit",
+      "cheers": "Gezuar"
     },
     {
       "code": "and",
@@ -17,6 +17,15 @@
       "hello": "xxx",
       "thanks": "xxx",
       "cheers": "xxx"
+    },
+    {
+      "code": "arm",
+      "country": "Armenian",
+      "flag": "🇦🇲",
+      "contributor": "Adam",
+      "hello": "Բարեւ",
+      "thanks": "Շնորհակալություն",
+      "cheers": "Կենած"
     },
     {
       "code": "aut",
@@ -31,10 +40,10 @@
       "code": "aze",
       "country": "Azerbaijan",
       "flag": "🇦🇿",
-      "contributor": "xxx",
-      "hello": "xxx",
-      "thanks": "xxx",
-      "cheers": "xxx"
+      "contributor": "Zahra + Zem + Farida",
+      "hello": "Salam",
+      "thanks": "Çox sağ ol",
+      "cheers": "Şərəfə"
     },
     {
       "code": "blr",
@@ -58,10 +67,10 @@
       "code": "bih",
       "country": "Bosnia",
       "flag": "🇧🇦",
-      "contributor": "xxx",
-      "hello": "xxx",
-      "thanks": "xxx",
-      "cheers": "xxx"
+      "contributor": "Imelda + Iman + Ema + Azra",
+      "hello": "Ćao/Zdravo",
+      "thanks": "Hvala",
+      "cheers": "U zdravlje/Živio"
     },
     {
       "code": "bgr",
@@ -76,10 +85,10 @@
       "code": "hrv",
       "country": "Croatia",
       "flag": "🇭🇷",
-      "contributor": "xxx",
-      "hello": "xxx",
-      "thanks": "xxx",
-      "cheers": "xxx"
+      "contributor": "Lana + Aleksa",
+      "hello": "Zdravo",
+      "thanks": "Hvala",
+      "cheers": "Uzdravlje/ zivjeli"
     },
     {
       "code": "cyp",
@@ -103,7 +112,7 @@
       "code": "dnk",
       "country": "Denmark",
       "flag": "🇩🇰",
-      "contributor": "Auguste M.",
+      "contributor": "Auguste + Hanne",
       "hello": "Hej",
       "thanks": "Tak",
       "cheers": "Skål"
@@ -112,10 +121,10 @@
       "code": "est",
       "country": "Estonia",
       "flag": "🇪🇪",
-      "contributor": "xxx",
-      "hello": "xxx",
-      "thanks": "xxx",
-      "cheers": "xxx"
+      "contributor": "Evelin",
+      "hello": "Tere",
+      "thanks": "Aitäh",
+      "cheers": "Terviseks"
     },
     {
       "code": "fin",
@@ -130,7 +139,7 @@
       "code": "fra",
       "country": "France",
       "flag": "🇫🇷",
-      "contributor": "Auguste M. + Pablo M.",
+      "contributor": "Auguste + Pablo",
       "hello": "Salut",
       "thanks": "Merci",
       "cheers": "Santé"
@@ -139,16 +148,16 @@
       "code": "geo",
       "country": "Georgia",
       "flag": "🇬🇪",
-      "contributor": "Dea B.",
+      "contributor": "Dea",
       "hello": "Gamarjoba",
       "thanks": "Madloba",
-      "cheers": "Gagimarjos"
+      "cheers": "Gagvimarjos"
     },
     {
       "code": "deu",
       "country": "Germany",
       "flag": "🇩🇪",
-      "contributor": "Merle S.",
+      "contributor": "Merle + Nadi + Dana",
       "hello": "Hallo",
       "thanks": "Danke",
       "cheers": "Prost"
@@ -220,10 +229,10 @@
     "code": "lva",
     "country": "Latvia",
     "flag": "🇱🇻",
-    "contributor": "xxx",
-    "hello": "xxx",
-    "thanks": "xxx",
-    "cheers": "xxx"
+    "contributor": "Aleksandra",
+    "hello": "Sveiki",
+    "thanks": "Paldies",
+    "cheers": "Priekā"
   },
   { 
     "code": "lie",
@@ -283,10 +292,10 @@
     "code": "mne",
     "country": "Montenegro",
     "flag": "🇲🇪",
-    "contributor": "xxx",
-    "hello": "xxx",
-    "thanks": "xxx",
-    "cheers": "xxx"
+    "contributor": "Milica",
+    "hello": "Cao",
+    "thanks": "Hvala",
+    "cheers": "Zivjeli"
   },
   { 
     "code": "nld",
@@ -319,16 +328,16 @@
     "code": "pol",
     "country": "Poland",
     "flag": "🇵🇱",
-    "contributor": "xxx",
-    "hello": "xxx",
-    "thanks": "xxx",
-    "cheers": "xxx"
+    "contributor": "Julia",
+    "hello": "Cześć",
+    "thanks": "Dziękuję",
+    "cheers": "Na zdrowie"
   },
   {
     "code": "prt",
     "country": "Portugal",
     "flag": "🇵🇹",
-    "contributor": "Ni",
+    "contributor": "Ni + Rebeca",
     "hello": "Olá",
     "thanks": "Obrigado",
     "cheers": "Saúde"
@@ -337,10 +346,10 @@
     "code": "rou",
     "country": "Romania",
     "flag": "🇷🇴",
-    "contributor": "xxx",
-    "hello": "xxx",
-    "thanks": "xxx",
-    "cheers": "xxx"
+    "contributor": "Trandafir + Iris",
+    "hello": "Bună",
+    "thanks": "Mulțumesc",
+    "cheers": "Noroc"
   },
   { 
     "code": "rus",
@@ -364,7 +373,7 @@
     "code": "srb",
     "country": "Serbia",
     "flag": "🇷🇸",
-    "contributor": "Nina",
+    "contributor": "Nina + Tea",
     "hello": "Ćao",
     "thanks": "Hvala",
     "cheers": "Živeli"
@@ -418,7 +427,7 @@
     "code": "tur",
     "country": "Turkey",
     "flag": "🇹🇷",
-    "contributor": "Kerem",
+    "contributor": "Kerem + Gülçe + Yasin",
     "hello": "Merhaba",
     "thanks": "Teşekkür ederim",
     "cheers": "Şerefe"
@@ -427,10 +436,10 @@
     "code": "ukr",
     "country": "Ukraine",
     "flag": "🇺🇦",
-    "contributor": "xxx",
-    "hello": "xxx",
-    "thanks": "xxx",
-    "cheers": "xxx"
+    "contributor": "Polina + Solomia",
+    "hello": "Pryvit",
+    "thanks": "Dyakuyu",
+    "cheers": "Dyakuyu"
   },
   { 
     "code": "gbr",

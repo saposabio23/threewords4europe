@@ -12,6 +12,32 @@ window.addEventListener("orientationchange", mobileWindow, false);
 
 
 /////////// INTRO ///////////
+var $guide = document.querySelector('.guide');
+var $navigate = document.querySelector('#navigate');
+function openIndex() {
+    $index.classList.toggle("indexOpen");
+    $navigate.classList.toggle("active");
+    if ($navigate.classList.contains("active")){
+        $navigate.classList.remove("rotationAnticlockside")
+        $navigate.classList.add("rotationClockside")
+    }
+    else {
+        $navigate.classList.remove("rotationClockside")
+        $navigate.classList.add("rotationAnticlockside")
+    }
+
+}
+$guide.addEventListener("click", openIndex, false);
+
+
+
+var $go = document.querySelector('#go');
+function closeIndex() {
+    $index.classList.remove("indexOpen");
+    
+}
+$go.addEventListener("click", closeIndex, false);
+
 
 var $logo = document.querySelector('#logo-top');
 
@@ -23,21 +49,21 @@ var $content = document.querySelector('.content');
 var $index = document.querySelector('.index');
 var $box = document.querySelector('.box');
 
-function onStart() {
-    $index.classList.toggle("opa");
-    $content.classList.toggle("opa");
-    $texto.classList.toggle("disable");
-    $start.classList.toggle("disable");
-}
-$start.addEventListener("click", onStart, false);
+// function onStart() {
+//     $index.classList.toggle("opa");
+//     $content.classList.toggle("opa");
+//     $texto.classList.toggle("disable");
+//     $start.classList.toggle("disable");
+// }
+// $start.addEventListener("click", onStart, false);
 
-function onGo() {
-    $index.classList.remove("opa");
-    $content.classList.remove("opa");
-    $texto.classList.remove("disable");
-    $start.classList.remove("disable");
-}
-$go.addEventListener("click", onGo, false);
+// function onGo() {
+//     $index.classList.remove("opa");
+//     $content.classList.remove("opa");
+//     $texto.classList.remove("disable");
+//     $start.classList.remove("disable");
+// }
+// $go.addEventListener("click", onGo, false);
 
 
 /*//////////////// DATA FETCH /////////////*/
@@ -283,3 +309,7 @@ function appendData(data) {
 
 //   });
 
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 15);
+});
