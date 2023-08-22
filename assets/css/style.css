@@ -2,6 +2,7 @@
     --white: white;
     --dim: #00000020;
     --smoke: #ffffff4d;
+    --index: #000000b8;
 
     --spacing-l: 30px;
     --spacing-m: 15px;
@@ -161,10 +162,15 @@ p {
     border: 1px solid white;
     border-radius: 20px;
     padding: 0px 8px;
+    transition: all ease-in-out .5s;
 }
 
 #contact:hover {
     text-decoration: none;
+    background-color: white;
+    color: black;
+    transition: all ease-in-out .5s;
+
 
 }
 
@@ -179,10 +185,12 @@ p {
 #updated {
     font-size: 90%;
     text-align: center;
-    border: 1px dotted white;
+    /*! border: 1px dotted white; */
     border-radius: 10px;
     padding: var(--spacing-s);
     text-decoration: none;
+    background-color: #ffffff26;
+    color: white;
 }
 
 #updated>a {
@@ -240,11 +248,13 @@ p {
 
     padding: 5px 0 3px 0;
 
-    background-color: var(--dim);
+    background-color: var(--index);
     backdrop-filter: blur(10px);
 }
 
-.guide:hover, #list:hover, #flags:hover {
+.guide:hover,
+#list:hover,
+#flags:hover {
     cursor: pointer;
 }
 
@@ -293,7 +303,7 @@ p {
     bottom: 0;
     left: 0;
     transform: translateY(calc(100%));
-    background-color: var(--dim);
+    background-color: var(--index);
     backdrop-filter: blur(10px);
 }
 
@@ -305,12 +315,14 @@ p {
 .indexHeader {
     margin-bottom: var(--spacing-s);
     font-size: 130%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+
 }
 
 .indexContent {
-    background-color: var(--dim);
+    background-color: #ffffff26;
     display: grid;
     align-content: start;
     border-radius: var(--radius-m);
@@ -330,6 +342,7 @@ p {
 
 .selected {
     font-family: var(--bold);
+    text-decoration: underline;
 }
 
 .disable {
@@ -373,7 +386,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: var(--spacing-m);
-    margin: var(--spacing-m) 0 var(--spacing-l) 0;
+    margin: var(--spacing-m) 0 60px 0;
 
 }
 
